@@ -9,8 +9,9 @@ public class Runner {
 	}
 
 	public static void Get_choice() {
-		System.out.println("(01) add an item");
-		System.out.println("(02) delete an item");
+		System.out.println("(1) add an item");
+		System.out.println("(2) delete an item");
+		System.out.println("(3) show books");
 		
 		Service myService = new Service();
 		
@@ -23,6 +24,9 @@ public class Runner {
 			myService.add_book();
 			break;
 		case 2:
+			myService.remove_book();
+			break;
+		case 3:
 			myService.remove_book();
 			break;
 		}
