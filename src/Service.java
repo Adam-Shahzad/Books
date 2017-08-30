@@ -32,4 +32,10 @@ public class Service {
 		
 		hm.remove(id);
 	}
+	
+	public void show_Books(){
+		for (Book i :hm.values()){
+			System.out.println(i);
+		}
+	}
 }
